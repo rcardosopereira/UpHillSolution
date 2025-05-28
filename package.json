@@ -1,0 +1,30 @@
+{
+  "name": "qa_challenge_uphill",
+  "version": "1.0.0",
+  "description": "QA Challenge",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "test": "cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/git.com/rcardosopereira.git"
+  },
+  "keywords": [
+    "automation",
+    "test",
+    "cypress",
+    "js"
+  ],
+  "author": "Rafael C. Pereira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/git.com/rcardosopereira/issues"
+  },
+  "homepage": "https://github.com/git.com/rcardosopereira#readme",
+  "devDependencies": {
+    "cypress": "^14.3.3",
+    "cypress-xpath": "^2.0.1"
+  }
+}
