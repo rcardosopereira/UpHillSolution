@@ -70,8 +70,8 @@ This repository contains comprehensive end-to-end tests for the UpHill Healthcar
 
 3. **Environment Setup**
    The test credentials are already configured in the cypress.env.js file:
-   - Username: candidate3@uphillhealth.com
-   - Password: Uphill284hdjs
+   - Username: --
+   - Password: --
 
 ## Running Tests
 
@@ -115,42 +115,10 @@ npm run cypress:run -- --browser firefox
 npm run cypress:run -- --browser edge
 ```
 
-## Test Architecture
 
-### Page Object Model
-Tests use the Page Object Model pattern for better maintainability:
-
-```javascript
-// Example usage
-import { PatientJourneysPage } from '../../support/page-objects/PatientJourneysPage'
-
-const patientJourneysPage = new PatientJourneysPage()
-patientJourneysPage.searchForPatient('John').shouldShowPatients()
-```
-
-### Custom Commands
-Reusable commands for common healthcare workflows:
-
-```javascript
-// Login to the application
-cy.login()
-
-// Navigate to Patient Journeys
-cy.navigateToPatientJourneys()
-
-// Search for patients
-cy.searchPatients('John Doe')
-
-// Apply communication status filter
-cy.selectCommunicationStatusFilter('Active')
-
-// Switch language
-cy.switchLanguage('PT')
-```
 
 ### Test Data Management
 - Synthetic patient data for testing
-- HIPAA-compliant test scenarios
 - Configurable test fixtures
 
 ## CI/CD Integration
@@ -192,7 +160,6 @@ Test results are available in the Cypress Dashboard with:
 - Test data is automatically cleaned up
 
 ### Accessibility Testing
-- WCAG 2.1 AA compliance validation
 - Screen reader compatibility
 - Keyboard navigation testing
 
