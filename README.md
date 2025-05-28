@@ -60,7 +60,7 @@ This repository contains comprehensive end-to-end tests for the UpHill Healthcar
 1. **Clone the repository**
    ```bash
    git clone <repository-url>
-   cd uphill-healthcare-tests
+   cd UpHillSolution
    ```
 
 2. **Install dependencies**
